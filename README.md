@@ -7,7 +7,7 @@ A todo.txt add override that prepends the task w/ the creation date.
 ## Installation
 
 - In your actions directory (default `.todo.actions.d`) create a new directory called `add`.
-- Clone the repo into the new directory `git clone https://github.com/DoctorRadar/todotxt_cli_date_add.git ~/.todo.actions.d/add/`
+- Clone the repo into the new directory `git clone https://github.com/kmf/todotxt_cli_date_add_week_number.git ~/.todo.actions.d/add/`
 - Set the script to be executable `chmod + x ~/.todo.actions.d/add/add`
 
 ## Assumptions
@@ -19,6 +19,8 @@ Type `todo.sh add This is my new task`
 
 Results in the line
 
-`nn YYYY-MM-DD This is my new task`
+`nn YYYY-MM-DD This is my new task week:YYYY_U`
 
-be added to the `todo.txt` file where `nn` is the task number and `YYYY-MM-DD` is the creation date.
+`08 2020-07-27 This is my new task week:2020_31`
+
+be added to the `todo.txt` file where `nn` is the task number and `YYYY-MM-DD` is the creation date and a key value pair with year and week number `week:YYYY_U`
