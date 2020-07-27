@@ -1,8 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
 # create the date string
 d=`date +%Y-%m-%d`
-
+week=`date +%Y_%U`
 # add it to the todo list with a date infront
-todo.sh command add $d "${@:2}"
-
+todo.sh command add $d "${@:2}" week:$week
